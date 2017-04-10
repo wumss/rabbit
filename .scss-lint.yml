@@ -1,6 +1,8 @@
 ---
 linters:
-  QualifyingElement:
-    enabled: false
-  NestingDepth:
-    enabled: false
+    QualifyingElement:
+        enabled: false
+    NestingDepth:
+        enabled: false
+    Indentation:
+        width: 4

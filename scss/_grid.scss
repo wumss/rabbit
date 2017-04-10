@@ -21,28 +21,28 @@
 // SOFTWARE.
 
 * {
-  border: 0;
-  border-collapse: separate;
-  border-spacing: 0;
-  box-sizing: border-box;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  text-align: left;
-  vertical-align: baseline;
+    border: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: baseline;
 }
 
 html,
 body {
-  @extend %sans-serif;
-  height: 100%;
-  width: 100%;
+    @extend %sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  background: darken($white, 4);
-  color: lighten($black, 10);
-  padding: 2 * $em;
+    background: darken($white, 4);
+    color: lighten($black, 10);
+    padding: 2 * $em;
 }
 
 p,
@@ -57,108 +57,108 @@ form,
 fieldset,
 figure,
 address {
-  margin-bottom: 1.65 * $em;
+    margin-bottom: 1.65 * $em;
 }
 
-section {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  width: 50 * $em;
+main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 55 * $em;
 }
 
 article {
-  background: $white;
-  border: .1 * $em solid lighten($black, 85);
-  border-radius: .4 * $em;
-  padding: 2.4 * $em;
+    background: $white;
+    border: .1 * $em solid lighten($black, 85);
+    border-radius: .4 * $em;
+    padding: 2.4 * $em;
 }
 
 header {
-  margin-bottom: 2 * $em;
+    margin-bottom: 2 * $em;
 }
 
 footer {
-  margin-top: 2 * $em;
+    margin-top: 2 * $em;
 }
 
 nav {
-  text-align: center;
-
-  ul {
-    list-style: none;
-    margin-left: 0;
     text-align: center;
 
-    li {
-      display: inline;
-      margin-left: .5 * $em;
-      margin-right: .5 * $em;
-
-      &:first-child {
+    ul {
+        list-style: none;
         margin-left: 0;
-      }
+        text-align: center;
 
-      &:last-child {
-        margin-right: 0;
-      }
+        li {
+            display: inline;
+            margin-left: .5 * $em;
+            margin-right: .5 * $em;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
-  }
 }
 
 ol,
 ul {
-  margin-left: 1.75 * $em;
+    margin-left: 1.75 * $em;
 }
 
 li {
-  dl,
-  ol,
-  ul {
-    margin-bottom: 0;
-  }
+    dl,
+    ol,
+    ul {
+        margin-bottom: 0;
+    }
 }
 
 dl {
-  display: inline-block;
+    display: inline-block;
 }
 
 dt {
-  padding: 0 $em;
+    padding: 0 $em;
 }
 
 dd {
-  padding: 0 $em (.25 * $em);
+    padding: 0 $em (.25 * $em);
 
-  &:last-of-type {
-    border-bottom: (.06 * $em) solid $gray;
-  }
+    &:last-of-type {
+        border-bottom: (.06 * $em) solid $gray;
+    }
 
-  + dt {
-    border-top: (.06 * $em) solid $gray;
-    padding-top: .5 * $em;
-  }
+    + dt {
+        border-top: (.06 * $em) solid $gray;
+        padding-top: .5 * $em;
+    }
 }
 
 blockquote {
-  border-left: (.12 * $em) solid $gray;
-  padding: (.25 * $em) $em (.25 * $em) (.88 * $em);
+    border-left: (.12 * $em) solid $gray;
+    padding: (.25 * $em) $em (.25 * $em) (.88 * $em);
 
-  footer {
-    color: $gray;
-    font-size: .75 * $em;
-    margin: 0;
-  }
+    footer {
+        color: $gray;
+        font-size: .75 * $em;
+        margin: 0;
+    }
 }
 
 img {
-  height: auto;
-  margin: 0 auto;
-  max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 figure {
-  img {
-    display: block;
-  }
+    img {
+        display: block;
+    }
 }

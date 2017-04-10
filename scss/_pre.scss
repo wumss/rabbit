@@ -26,40 +26,40 @@ kbd,
 samp,
 var,
 output {
-  font-family: $monospace;
-  font-size: .8 * $em;
+    font-family: $monospace;
+    font-size: .8 * $em;
 }
 
 pre {
-  border-left: .1 * $em solid lighten($green, 25);
-  line-height: 1.4 * $em;
-  overflow: auto;
-  padding-left: $em;
+    border-left: .1 * $em solid lighten($green, 25);
+    line-height: 1.4 * $em;
+    overflow: auto;
+    padding-left: $em;
 
-  code {
-    background: none;
-    border: 0;
-    line-height: 1.65 * $em;
-    padding: 0;
-  }
+    code {
+        background: none;
+        border: 0;
+        line-height: 1.65 * $em;
+        padding: 0;
+    }
 }
 
 code,
 kbd {
-  background: lighten($green, 43);
-  border-radius: .2 * $em;
-  color: $green;
-  display: inline-block;
-  line-height: $em;
-  padding: (.2 * $em) (.35 * $em) (.15 * $em);
+    background: lighten($green, 43);
+    border-radius: .2 * $em;
+    color: $green;
+    display: inline-block;
+    line-height: $em;
+    padding: (.2 * $em) (.35 * $em) (.15 * $em);
 }
 
 kbd {
-  background: $green;
-  color: $white;
+    background: $green;
+    color: $white;
 }
 
 mark {
-  background: $yellow;
-  padding: 0 (.2 * $em);
+    background: $yellow;
+    padding: 0 (.2 * $em);
 }

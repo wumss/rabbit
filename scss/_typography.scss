@@ -21,45 +21,45 @@
 // SOFTWARE.
 
 a {
-  color: $blue;
-  text-decoration: none;
+    color: $blue;
+    text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
-  }
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 hr {
-  border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $gray;
 }
 
 figcaption,
 small {
-  font-size: .85 * $em;
+    font-size: .85 * $em;
 }
 
 figcaption {
-  color: $gray;
+    color: $gray;
 }
 
 var,
 em,
 i {
-  font-style: italic;
+    font-style: italic;
 }
 
 dt,
 strong,
 b {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 del,
 s {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 ins,
 u {
-  text-decoration: underline;
+    text-decoration: underline;
 }

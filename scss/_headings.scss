@@ -26,37 +26,37 @@ h3,
 h4,
 h5,
 h6 {
-  color: $black;
-  margin-bottom: $em;
+    color: $black;
+    margin-bottom: $em;
 }
 
 h1 {
-  font-size: 2 * $em;
-  font-weight: 500;
+    font-size: 2 * $em;
+    font-weight: 500;
 }
 
 h2 {
-  font-size: 1.4 * $em;
-  font-weight: 400;
+    font-size: 1.4 * $em;
+    font-weight: 400;
 }
 
 h3 {
-  font-size: 1.2 * $em;
+    font-size: 1.2 * $em;
 }
 
 h4 {
-  font-size: $em;
+    font-size: $em;
 }
 
 h5 {
-  font-size: .8 * $em;
-  font-weight: bold;
-  text-transform: uppercase;
+    font-size: .8 * $em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h6 {
-  color: $gray;
-  font-size: .8 * $em;
-  font-weight: bold;
-  text-transform: uppercase;
+    color: $gray;
+    font-size: .8 * $em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
