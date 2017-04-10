@@ -6,3 +6,6 @@ linters:
         enabled: false
     Indentation:
         width: 4
+    SelectorDepth:
+        enabled: true
+        max_depth: 4
