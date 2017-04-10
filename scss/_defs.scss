@@ -20,11 +20,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 // sizes
 $em: 18px;
 
 // fonts
-$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans-serif: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 // colors
