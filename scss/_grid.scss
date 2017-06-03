@@ -79,9 +79,10 @@ header {
     margin-bottom: 2 * $em;
 
     nav {
-        height: 90px;
+        border-bottom: 1px solid $dark-gray;
+        height: $navbar-height;
         left: 0;
-        padding: 10px;
+        padding: 0;
         position: absolute;
         right: 0;
         top: 0;
@@ -94,7 +95,7 @@ footer {
 }
 
 nav {
-    background: $black;
+    background-color: $white;
     text-align: center;
 
     ul {
@@ -125,11 +126,11 @@ nav {
             }
 
             a {
-                color: $gray;
-                font-size: 1.5 * $em;
+                display: inline-block;
+                line-height: $navbar-height - 2px;
 
                 &:hover {
-                    color: $white;
+                    background-color: $dark-gray;
                 }
             }
         }
