@@ -22,11 +22,18 @@
 
 @media (max-width: $mobile-width) {
     body {
-        padding: $em 0;
+        padding: 0;
+    }
+
+    body > main {
+        margin: 0;
+        padding: 0;
+        width: auto;
     }
 
     article {
-        border-radius: 0;
+        border: 0;
+        margin: 0;
         padding: $em;
     }
 
@@ -61,4 +68,63 @@
         // `-moz-any-link` hack so W3C CSS validator will pass it.
         display: table-cell;
     }
+
+    nav {
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 6px 0;
+        padding: 2px 0;
+    }
+
+    .nav-trigger:checked ~ ul li {
+        display: none;
+    }
+
+    .nav-trigger:checked ~ ul li:first-child {
+        display: block;
+    }
+
+    nav ul li:first-child a {
+        text-align: left;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+    }
+
+    label[for="nav-trigger"] {
+        cursor: pointer;
+        display: inline-block;
+        height: 50px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 50px;
+        z-index: 2;
+    }
+
+    label[for="nav-trigger"]::before {
+        box-shadow: 0 15px 0 0 $white,
+                    0 30px 0 0 $white;
+        content: '';
+        height: 8px;
+        left: 0;
+        position: absolute;
+        width: 50px;
+    }
+}
+
+label[for="nav-trigger"] {
+    display: none;
+}
+
+.nav-trigger {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
 }

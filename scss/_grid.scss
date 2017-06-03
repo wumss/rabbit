@@ -63,18 +63,12 @@ address {
 main {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5 * $em;
+    margin-top: $navbar-height;
     max-width: 100%;
     width: 55 * $em;
 }
 
-article {
-    padding: 2.4 * $em;
-}
-
 header {
-    margin-bottom: 2 * $em;
-
     nav {
         border-bottom: 1px solid $dark-gray;
         height: $navbar-height;
