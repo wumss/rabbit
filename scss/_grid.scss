@@ -186,8 +186,6 @@ img {
     max-width: 100%;
 }
 
-figure {
-    img {
-        display: block;
-    }
+figure img, p > img:only-child {
+    display: block;
 }
