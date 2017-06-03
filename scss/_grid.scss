@@ -85,7 +85,7 @@ footer {
 }
 
 nav {
-    background-color: $white;
+    background-color: $navbar-background;
     text-align: center;
 
     ul {
@@ -107,6 +107,7 @@ nav {
             }
 
             a {
+                color: $navbar-color;
                 display: inline-block;
                 line-height: $navbar-height - 2px;
                 max-height: $navbar-height - 2px;
