@@ -160,11 +160,11 @@ dd {
     padding: 0 $em (.25 * $em);
 
     &:last-of-type {
-        border-bottom: (.06 * $em) solid $gray;
+        border-bottom: (.06 * $em) solid $dark-gray;
     }
 
     + dt {
-        border-top: (.06 * $em) solid $gray;
+        border-top: (.06 * $em) solid $dark-gray;
         padding-top: .5 * $em;
     }
 }
