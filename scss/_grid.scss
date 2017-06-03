@@ -40,8 +40,8 @@ body {
 }
 
 body {
-    background: darken($white, 4);
-    color: lighten($black, 10);
+    background: $white;
+    color: $black;
     padding: 2 * $em;
 }
 
@@ -69,9 +69,6 @@ main {
 }
 
 article {
-    background: $white;
-    border: .1 * $em solid lighten($black, 85);
-    border-radius: .4 * $em;
     padding: 2.4 * $em;
 }
 
@@ -109,9 +106,8 @@ nav {
             display: inline-block;
             margin-left: .5 * $em;
             margin-right: .5 * $em;
-            padding: 0 5px;
             text-align: center;
-            vertical-align: middle;
+            vertical-align: top;
 
             &:first-child {
                 margin-left: 0;
@@ -128,9 +124,13 @@ nav {
             a {
                 display: inline-block;
                 line-height: $navbar-height - 2px;
+                max-height: $navbar-height - 2px;
+                padding: 0 5px;
+                vertical-align: top;
 
-                &:hover {
-                    background-color: $dark-gray;
+                img {
+                    margin-top: 2px;
+                    vertical-align: top;
                 }
             }
         }
