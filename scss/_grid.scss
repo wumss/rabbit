@@ -90,6 +90,7 @@ header {
 
 footer {
     margin-top: 2 * $em;
+    text-align: center;
 }
 
 nav {
@@ -186,6 +187,7 @@ img {
     max-width: 100%;
 }
 
-figure img, p > img:only-child {
+figure img,
+p > img:only-child {
     display: block;
 }
