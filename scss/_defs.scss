@@ -31,7 +31,7 @@ $sans-serif: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 // colors
-$black: #000;
+$black: rgba(0, 0, 0, .8);
 $white: #fff;
 $gray: #ccc;
 $dark-gray: #aaa;
@@ -42,6 +42,8 @@ $yellow: #ffc;
 
 $navbar-background: $black;
 $navbar-color: $white;
+
+$content-width: 800px;
 
 // responsive
 $mobile-width: 767px;
