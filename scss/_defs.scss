@@ -22,16 +22,36 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-// sizes
-$em: 18px;
+// Our variables
+$base-font-size:   18px;
+$small-font-size:  $base-font-size * .875;
+$base-line-height: 1.58;
+
+$spacing-unit:     30px;
+
+$text-color:       rgb(0, 0, 0);
+$background-color: rgb(251, 237, 218);
+$brand-color:      #2a7ae2;
+
+$grey-color:       rgb(0, 0, 0);
+$grey-color-light: lighten($grey-color, 50%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
 $navbar-height: 70px;
+$em: $base-font-size;
 
 // fonts
 $sans-serif: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 // colors
-$black: rgba(0, 0, 0, .8);
+$black: rgba(0, 0, 0, 1);
 $white: #fff;
 $gray: #ccc;
 $dark-gray: #aaa;
@@ -50,7 +70,7 @@ $mobile-width: 767px;
 
 %sans-serif {
     font-family: $sans-serif;
-    font-size: $em;
+    font-size: $base-font-size;
     font-stretch: normal;
     font-style: normal;
     font-weight: 300;

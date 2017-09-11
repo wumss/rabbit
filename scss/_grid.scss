@@ -40,8 +40,8 @@ body {
 }
 
 body {
-    background: $white;
-    color: $black;
+    background: $background-color;
+    color: $text-color;
     padding: 2 * $em;
 }
 
@@ -65,7 +65,7 @@ main {
     margin-right: auto;
     margin-top: $navbar-height;
     max-width: 100%;
-    width: 55 * $em;
+    width: $content-width;
 }
 
 header {
