@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2017 Yegor Bugayenko
+// Copyright (c) 2015-2017 Yegor Bugayenko, Fengyang Wang
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -20,8 +20,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 // Our variables
 $base-font-size:   18px;
 $small-font-size:  $base-font-size * .875;
@@ -30,7 +28,8 @@ $base-line-height: 1.58;
 $spacing-unit:     30px;
 
 $text-color:       rgb(0, 0, 0);
-$background-color: rgb(251, 237, 218);
+$background-color: rgb(254, 251, 246);
+$accent-color:     #820;
 $brand-color:      #2a7ae2;
 
 $grey-color:       rgb(0, 0, 0);
@@ -43,12 +42,18 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+// Breaks
+$break-small:      600px;
+$break-large:      750px;
+
+// Fonts
+$base-font-family: Ubuntu, sans-serif;
+$code-font-family: 'Ubuntu Mono', monospace;
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic&subset=latin,latin-ext,greek);
+
 $navbar-height: 70px;
 $em: $base-font-size;
-
-// fonts
-$sans-serif: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 // colors
 $black: rgba(0, 0, 0, 1);
@@ -63,13 +68,11 @@ $yellow: #ffc;
 $navbar-background: $black;
 $navbar-color: $white;
 
-$content-width: 800px;
-
 // responsive
 $mobile-width: 767px;
 
 %sans-serif {
-    font-family: $sans-serif;
+    font-family: $base-font-family;
     font-size: $base-font-size;
     font-stretch: normal;
     font-style: normal;
