@@ -35,7 +35,7 @@ module.exports = function (grunt) {
             compass: true
           },
           files: {
-            'tacit.min.css': 'scss/main.scss'
+            'rabbit.min.css': 'scss/main.scss'
           }
         },
         dist: {
