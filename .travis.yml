@@ -1,16 +1,27 @@
 language: node_js
 git:
-  depth: 10
+    depth: 10
 node_js:
-  - "0.12"
+    - "0.12"
 addons:
-  apt:
-    packages:
-      - ruby
+    apt:
+        packages:
+            - ruby
 before_install:
-  - npm install -g grunt-cli
-  - gem install --no-ri compass
-  - gem install --no-ri scss-lint
+    - npm install -g grunt-cli
+    - gem install --no-ri compass
+    - gem install --no-ri scss-lint
 install:
-  - npm install
-
+    - npm install
+script:
+    - mkdir -p dist
+    - grunt
+    - cp index.html dist
+    - cp logo.png dist
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+    on:
+        branch: master
+    local_dir: dist
