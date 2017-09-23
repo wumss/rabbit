@@ -5,5 +5,5 @@ target/
 .DS_Store
 node_modules/
 dist/
-tacit.min.css
-tacit.min.css.map
+rabbit.min.css
+rabbit.min.css.map
