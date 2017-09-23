@@ -52,12 +52,9 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    780px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
-
-// Breaks
-$break-small:      600px;
-$break-large:      750px;
+// Responsive width cutoffs
+$mobile-width:     767px;
+$laptop-width:     900px;
 
 // Fonts
 $base-font-family: Ubuntu, sans-serif;
@@ -70,9 +67,6 @@ $em: $base-font-size;
 
 $navbar-background: $black;
 $navbar-color: $white;
-
-// responsive
-$mobile-width: 767px;
 
 %sans-serif {
     font-family: $base-font-family;
