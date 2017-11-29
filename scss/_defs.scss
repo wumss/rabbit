@@ -22,14 +22,14 @@
 // SOFTWARE.
 
 // Our variables
-$base-font-size:   18px;
+$base-font-size:   19px;
 $small-font-size:  $base-font-size * .875;
 $base-line-height: 1.58;
 
 $spacing-unit:     30px;
 
 // colors
-$black:            rgba(0, 0, 0, .91);
+$black:            rgba(0, 0, 0, .88);
 $white:            rgb(250, 250, 250);
 $gray:             rgb(150, 150, 150);
 $dark-gray:        rgb(100, 100, 100);
@@ -41,7 +41,7 @@ $yellow:           #ffc;
 // semantic colors
 $text-color:       $black;
 $background-color: rgb(250, 250, 250);
-$anchor-color:     darken($blue, 15%);
+$anchor-color:     $black;
 $accent-color:     #820;
 $brand-color:      #2a7ae2;
 
