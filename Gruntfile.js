@@ -74,22 +74,13 @@ module.exports = function (grunt) {
           colorizeOutput: true
         },
       },
-      shell: {
-        target: {
-          command: 'grep -q -r 2015-' + new Date().getFullYear()
-            + ' --include "*.scss"'
-            + ' --include "*.js"'
-            + ' .'
-        }
-      }
     }
   );
   require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.loadNpmTasks('grunt-shell');
-  grunt.registerTask('default', ['scsslint', 'sass:dist', 'shell']);
-  grunt.registerTask('rultor', ['scsslint', 'sass:dist', 'sass:uncompressed', 'shell']);
+  grunt.registerTask('default', ['scsslint', 'sass:dist']);
+  grunt.registerTask('rultor', ['scsslint', 'sass:dist', 'sass:uncompressed']);
   grunt.registerTask('dev', ['scsslint', 'sass:dev', 'watch']);
 }
 
