@@ -56,7 +56,7 @@ form,
 fieldset,
 figure,
 address {
-    margin-bottom: 1.65 * $em;
+    margin-bottom: 1.5 * $em;
 }
 
 main {
@@ -134,7 +134,7 @@ li {
     }
 
     p:last-child {
-        margin-bottom: 0;
+        margin-bottom: 0.5 * $em;
     }
 }
 
