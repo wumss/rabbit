@@ -57,10 +57,10 @@ $mobile-width:     767px;
 $laptop-width:     900px;
 
 // Fonts
-$base-font-family: Ubuntu, sans-serif;
-$code-font-family: 'Ubuntu Mono', monospace;
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700,700italic&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic&subset=latin,latin-ext,greek);
+$base-font-family: 'Encode Sans', sans-serif;
+$code-font-family: 'Consolas', monospace;
+@import url(https://fonts.googleapis.com/css?family=Encode+Sans:400,400italic,700,700italic&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Consolas:400,400italic,700,700italic&subset=latin,latin-ext,greek);
 
 $navbar-height: 70px;
 $em: $base-font-size;
