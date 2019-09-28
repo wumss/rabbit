@@ -53,15 +53,6 @@
         width: auto;
     }
 
-    x:-moz-any-link {
-        // The following lines fixes fieldset overflow bug in Firefox browser.
-        // For further info, see:
-        // http://stackoverflow.com/questions/17408815/fieldset-resizes-wrong-appears-to-have-unremovable-min-width-min-content/17863685#17863685
-        // Changed the original `@-moz-document url-prefix` code to simpler
-        // `-moz-any-link` hack so W3C CSS validator will pass it.
-        display: table-cell;
-    }
-
     .nav-trigger:checked ~ ul li {
         display: none;
     }
@@ -79,7 +70,8 @@
             background: $navbar-background;
             border-color: $dark-gray;
             border-style: solid;
-            border-width: 0 1px 1px;
+            border-width: 0 0 1px;
+            margin: 0;
             display: block;
 
             a {
@@ -89,8 +81,9 @@
         }
 
         ul li:first-child {
+            background: none;
             border: 0;
-            margin-bottom: 2px;
+            margin: 0 0.5 * $em 2px;
 
             a {
                 text-align: left;
@@ -99,23 +92,25 @@
 
         label[for="nav-trigger"] {
             cursor: pointer;
+            margin: 0;
             display: block;
-            height: 50px;
+            height: $navbar-height;
             position: absolute;
-            right: 30px;
-            top: 17px;
-            width: 50px;
+            right: 0;
+            top: 0;
+            width: $hamburger-width + 2 * $hamburger-buffer-horizontal;
             z-index: 2;
 
             &::before {
                 background-color: $navbar-color;
-                box-shadow: 0 15px 0 0 $navbar-color,
-                            0 30px 0 0 $navbar-color;
+                box-shadow: 0 $hamburger-offset-2 0 0 $navbar-color,
+                            0 $hamburger-offset-3 0 0 $navbar-color;
                 content: '';
-                height: 8px;
-                left: 0;
+                height: $hamburger-bun-height;
+                left: $hamburger-buffer-horizontal;
+                top: $hamburger-buffer-vertical;
                 position: absolute;
-                width: 50px;
+                width: $hamburger-width;
             }
         }
     }

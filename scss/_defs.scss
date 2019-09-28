@@ -63,6 +63,14 @@ $code-font-family: 'Consolas', monospace;
 @import url(https://fonts.googleapis.com/css?family=Consolas:400,400italic,700,700italic&subset=latin,latin-ext,greek);
 
 $navbar-height: 70px;
+$hamburger-width: 50px;
+$hamburger-buffer-horizontal: 20px;
+$hamburger-height: 40px;
+$hamburger-buffer-vertical: ($navbar-height - $hamburger-height) / 2;
+$hamburger-bun-height: 8px;
+$hamburger-offset-2: ($hamburger-height - $hamburger-bun-height) / 2;
+$hamburger-offset-3: $hamburger-height - $hamburger-bun-height;
+
 $em: $base-font-size;
 
 $navbar-background: lighten($black, 10%);
