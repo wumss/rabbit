@@ -1,19 +1,14 @@
-[![Made By Teamed.io](http://img.teamed.io/btn.svg)](http://www.teamed.io)
-[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/tacit)](http://www.rultor.com/p/yegor256/tacit)
+[![Build Status](https://img.shields.io/travis/wumss/rabbit/master.svg)](https://travis-ci.org/wumss/rabbit)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/wumss/rabbit/blob/master/LICENSE.txt)
 
-[![Build Status](https://img.shields.io/travis/yegor256/tacit/master.svg)](https://travis-ci.org/yegor256/tacit)
-[![PDD status](http://www.0pdd.com/svg?name=yegor256/tacit)](http://www.0pdd.com/p?name=teamed/yegor256/tacit)
-[![Build status](https://ci.appveyor.com/api/projects/status/9imw0l5gu82awubp?svg=true)](https://ci.appveyor.com/project/yegor256/tacit)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/tacit/blob/master/LICENSE.txt)
-[![Bower](https://img.shields.io/bower/v/tacit.svg)](https://github.com/yegor256/tacit/releases)
-[![Dependencies](https://www.versioneye.com/user/projects/561ac7cea193340f2f00122f/badge.svg?style=flat)](https://www.versioneye.com/user/projects/561ac7cea193340f2f00122f)
+**Rabbit** is a primitive CSS framework for dummies who don't know anything about graphic
+design but want their web services to look eatable. Almost no classes and no layouts. Just
+design plain and simple web pages compliant with HTML5 and they will look OK.
 
-**Tacit** is a primitive CSS framework for dummies, like myself, who
-don't know anything about graphic design but want their web services to
-look eatable. No classes, no layouts. Just design plain and simple web pages
-compliant with HTML5 and they will look OK.
+Rabbit is a fork of the original [tacit](https://github.com/yegor256/tacit), which you
+should also consider.
 
-Details are here: [yegor256.github.io/tacit](http://yegor256.github.io/tacit/)
+Details are here: [wumss.github.io/rabbit](https://wumss.github.io/rabbit/)
 
 Just add it to your HTML:
 
@@ -21,25 +16,22 @@ Just add it to your HTML:
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="http://yegor256.github.io/tacit/tacit.min.css"/>
+    <link rel="stylesheet" href="http://wumss.github.io/rabbit/rabbit.min.css"/>
   </head>
 </html>
 ```
 
-Or simply download [`tacit.min.css`](http://yegor256.github.io/tacit/tacit.min.css)
+Or simply download [`rabbit.min.css`](http://wumss.github.io/rabbit/rabbit.min.css)
 and use together with your HTML by adding:
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="tacit.min.css"/>
+    <link rel="stylesheet" href="rabbit.min.css"/>
   </head>
 </html>
 ```
-
-This blog post explains it in even more details:
-[Tacit, a CSS Framework Without Classes](http://www.yegor256.com/2015/04/13/tacit-css-framework-for-dummies.html).
 
 ## How to contribute
 
@@ -72,5 +64,5 @@ gem update --system && gem install scss_lint compass
 ## Got questions?
 
 If you have questions or general suggestions, don't hesitate to submit
-a new [Github issue](https://github.com/yegor256/tacit/issues/new).
+a new [Github issue](https://github.com/wumss/rabbit/issues/new).
 

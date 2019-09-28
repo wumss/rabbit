@@ -55,14 +55,31 @@
   &lt;/head&gt;
 &lt;/html&gt;</pre>
             <p>
-            <strong>Don’t</strong> use CSS classes to make your HTML code look nice. Just
-            make sure it is <a href="https://www.w3.org/TR/html5/">HTML5</a> compliant and
-            you’ll be fine. Again, <mark>no classes</mark>, just standard HTML elements,
+            <strong>Don’t</strong> use CSS classes to make your HTML code look nice. (With
+            one exception: the hamburger menu requires a few classes and IDs, see below!)
+            Just make sure it is <a href="https://www.w3.org/TR/html5/">HTML5</a> compliant
+            and you’ll be fine. Again, <mark>no classes</mark>, just standard HTML elements,
             like <code>&lt;table&gt;</code> and <code>&lt;input&gt;</code>.
             </p>
             <p>
             Check the source code of this page.
             </p>
+            <h2>Hamburger Menu</h2>
+            <p>Structure your navigation like this to take advantage of Rabbit’s responsive
+            hamburger menu:</p>
+
+            <pre>
+&lt;header&gt;
+  &lt;nav&gt;
+    &lt;input id="nav-trigger" class="nav-trigger" type="checkbox" checked="checked"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;!--
+   --&gt;&lt;li&gt;&lt;a href="/link"&gt;Other Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;label for="nav-trigger"&gt;&lt;/label&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+            </pre>
             <h2>Forms</h2>
             <p>
             Here is a simple form:
