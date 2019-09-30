@@ -37,8 +37,8 @@ button {
     padding: .55 * $em;
 
     + label,
-    + input[type="checkbox"],
-    + input[type="radio"] {
+    + input[type='checkbox'],
+    + input[type='radio'] {
         page-break-before: always;
     }
 }
@@ -57,8 +57,8 @@ label {
     }
 }
 
-input[type="submit"],
-input[type="reset"],
+input[type='submit'],
+input[type='reset'],
 button {
     background: darken($white, 5);
     color: darken($gray, 25);
@@ -82,8 +82,8 @@ button {
 
 }
 
-input[type="submit"],
-button[type="submit"] {
+input[type='submit'],
+button[type='submit'] {
     background: $blue;
     color: $white;
 
@@ -94,23 +94,23 @@ button[type="submit"] {
 
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="phone"],
-input[type="tel"],
-input[type="number"],
-input[type="datetime"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="color"],
-input[type="time"],
-input[type="search"],
-input[type="range"],
-input[type="file"],
-input[type="datetime-local"],
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='url'],
+input[type='phone'],
+input[type='tel'],
+input[type='number'],
+input[type='datetime'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='color'],
+input[type='time'],
+input[type='search'],
+input[type='range'],
+input[type='file'],
+input[type='datetime-local'],
 select,
 textarea {
     border: 1px solid $gray;
@@ -120,8 +120,8 @@ textarea {
     width: 100%;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
     flex-grow: 0;
     height: 1.65 * $em;
     margin-right: .5 * $em;

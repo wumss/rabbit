@@ -22,65 +22,61 @@
  * SOFTWARE.
  */
 
+const sass = require('node-sass')
+
 module.exports = function (grunt) {
-  'use strict';
-  grunt.util.linefeed = '\n';
-  grunt.initConfig(
-    {
-      pkg: grunt.file.readJSON('package.json'),
-      sass: {
-        dev: {
-          options: {
-            style: 'compressed',
-            compass: true
-          },
-          files: {
-            'rabbit.min.css': 'scss/main.scss'
-          }
-        },
-        dist: {
-          options: {
-            style: 'compressed',
-            compass: true
-          },
-          files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss',
-            'dist/<%= pkg.name %>.min.css': 'scss/main.scss'
-          }
-        },
-        uncompressed: {
-          options: {
-            compass: true,
-            sourcemap: 'none',
-            style: 'expanded'
-          },
-          files: {
-            'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
-          }
+    'use strict';
+    grunt.util.linefeed = '\n';
+    grunt.initConfig(
+        {
+            pkg: grunt.file.readJSON('package.json'),
+            sass: {
+                dev: {
+                    options: {
+                        implementation: sass,
+                        sourceMap: true,
+                        outputStyle: 'compressed',
+                    },
+                    files: {
+                        'rabbit.min.css': 'scss/main.scss'
+                    }
+                },
+                dist: {
+                    options: {
+                        implementation: sass,
+                        sourceMap: true,
+                        outputStyle: 'compressed',
+                    },
+                    files: {
+                        'dist/<%= pkg.name %>-<%= pkg.version %>.min.css': 'scss/main.scss',
+                        'dist/<%= pkg.name %>.min.css': 'scss/main.scss'
+                    }
+                },
+                uncompressed: {
+                    options: {
+                        implementation: sass,
+                        sourcemap: false,
+                        outputStyle: 'expanded',
+                    },
+                    files: {
+                        'dist/<%= pkg.name %>-<%= pkg.version %>.css': 'scss/main.scss'
+                    }
+                }
+            },
+            watch: {
+                sass: {
+                    files: 'scss/{,*/}*.scss',
+                    tasks: ['sass:dev']
+                }
+            },
+            sasslint: {
+                target: ['scss/*.scss'],
+            },
         }
-      },
-      watch: {
-        sass: {
-          files: 'scss/{,*/}*.scss',
-          tasks: ['sass:dev']
-        }
-      },
-      scsslint: {
-        allFiles: [
-          'scss/*.scss',
-        ],
-        options: {
-          config: '.scss-lint.yml',
-          colorizeOutput: true
-        },
-      },
-    }
-  );
-  require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-scss-lint');
-  grunt.registerTask('default', ['scsslint', 'sass:dist']);
-  grunt.registerTask('rultor', ['scsslint', 'sass:dist', 'sass:uncompressed']);
-  grunt.registerTask('dev', ['scsslint', 'sass:dev', 'watch']);
+    );
+    require('load-grunt-tasks') (grunt, { scope: 'devDependencies' });
+    grunt.registerTask('default', ['sasslint', 'sass:dist']);
+    grunt.registerTask('rultor', ['sasslint', 'sass:dist', 'sass:uncompressed']);
+    grunt.registerTask('dev', ['sasslint', 'sass:dev', 'watch']);
 }
 

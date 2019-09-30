@@ -32,21 +32,21 @@ h6 {
 }
 
 h1 {
+    border-bottom: 3px double $grey-color-light;
     font-size: 1.8 * $em;
     font-weight: normal;
     line-height: 2.5 * $em;
-    padding-bottom: 0.2 * $em;
-    border-bottom: 3px double $grey-color-light;
     margin-top: 1.5em;
+    padding-bottom: .2 * $em;
 }
 
 h2 {
+    border-bottom: 1px solid $grey-color-light;
     font-size: 1.4 * $em;
     font-weight: normal;
     line-height: 1.8 * $em;
-    padding-bottom: 0.1 * $em;
-    border-bottom: 1px solid $grey-color-light;
     margin-top: 2 * $em;
+    padding-bottom: .1 * $em;
 }
 
 h3 {

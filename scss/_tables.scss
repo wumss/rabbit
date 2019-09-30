@@ -30,9 +30,11 @@ th {
     padding: .825 * $em $em;
 }
 
-thead th {
-    border-bottom-width: .12 * $em;
-    padding-bottom: .35 * $em;
+thead {
+    th {
+        border-bottom-width: .12 * $em;
+        padding-bottom: .35 * $em;
+    }
 }
 
 table {

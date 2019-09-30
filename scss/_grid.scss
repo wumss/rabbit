@@ -59,24 +59,23 @@ address {
     margin-bottom: 1.5 * $em;
 }
 
-main {
+main, footer {
     margin-left: auto;
     margin-right: auto;
-    margin-top: $navbar-height;
     max-width: 100%;
     width: $content-width;
 }
 
 header {
-    nav {
-        border-bottom: 1px solid $dark-gray;
-        height: $navbar-height;
-        left: 0;
-        padding: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+    left: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+main {
+    margin-top: $navbar-height;
 }
 
 footer {
@@ -84,7 +83,9 @@ footer {
 }
 
 nav {
+    height: $navbar-height;
     background-color: $navbar-background;
+    color: $navbar-color;
     text-align: center;
 
     ul {
@@ -103,20 +104,20 @@ nav {
             &.current {
                 border-bottom: 2px solid $blue;
             }
+        }
+    }
 
-            a {
-                color: $navbar-color;
-                display: inline-block;
-                line-height: $navbar-height - 2px;
-                max-height: $navbar-height - 2px;
-                padding: 0 5px;
-                vertical-align: top;
+    a {
+        color: inherit;
+        display: inline-block;
+        line-height: $navbar-height - 2px;
+        max-height: $navbar-height - 2px;
+        padding: 0 5px;
+        vertical-align: top;
 
-                img {
-                    margin-top: 2px;
-                    vertical-align: top;
-                }
-            }
+        img {
+            margin-top: 2px;
+            vertical-align: top;
         }
     }
 }
@@ -134,7 +135,7 @@ li {
     }
 
     p:last-child {
-        margin-bottom: 0.5 * $em;
+        margin-bottom: .5 * $em;
     }
 }
 
