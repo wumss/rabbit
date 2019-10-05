@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="css, html5, css framework"/>
+        <meta name="description" content="CSS Framework for Dummies"/>
+        <link rel="stylesheet" href="rabbit.min.css"/>
+        <title>rabbit</title>
+        <link rel="shortcut icon" type="image/png" href="logo.png"/>
+        <!-- Global Site Tag (gtag.js) — Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93527069-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-93527069-2');
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <input id="nav-trigger"
+                       class="nav-trigger"
+                       type="checkbox"
+                       checked="checked"/>
+                <ul>
+                    <li><a href="https://wumss.github.io/rabbit/"><img src="https://wumss.github.io/rabbit/logo.png" alt="Rabbit"/></a></li>
+                    <li><a href="https://github.com/wumss/rabbit">GitHub</a></li>
+                    <li><a href="https://wumss.github.io/rabbit/rabbit.min.css">Download</a></li>
+                    <li><a rel="license" href="https://opensource.org/licenses/MIT">MIT license</a></li>
+                </ul>
+                <label for="nav-trigger"></label>
+            </nav>
+        </header>
+        <main>
+        <article>
+            <h1>Rabbit</h1>
+            <p>
+            <a href="https://uwseminars.com/">UW Student Seminars</a> (WUMSS) maintains a
+            fork of <a href="https://github.com/yegor256/tacit">tacit</a>, originally
+            created by Yegor Bugayenko. To avoid confusion with the original, our fork is
+            branded as <q>rabbit</q>.
+            </p>
+            <p>
+            <strong>Rabbit</strong> is a CSS framework to make web services to look
+            attractive without graphic design. This is how your website will look if you add
+            just this code to your HTML:
+            </p>
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="https://wumss.github.io/rabbit/rabbit.min.css"/&gt;
+  &lt;/head&gt;
+&lt;/html&gt;</pre>
+            <p>
+            <strong>Don’t</strong> use CSS classes to make your HTML code look nice. (With
+            one exception: the hamburger menu requires a few classes and IDs, see below!)
+            Just make sure it is <a href="https://www.w3.org/TR/html5/">HTML5</a> compliant
+            and you’ll be fine. Again, <mark>no classes</mark>, just standard HTML elements,
+            like <code>&lt;table&gt;</code> and <code>&lt;input&gt;</code>.
+            </p>
+            <p>
+            Check the source code of this page.
+            </p>
+            <h2>Hamburger Menu</h2>
+            <p>Structure your navigation like this to take advantage of Rabbit’s responsive
+            hamburger menu:</p>
+
+            <pre>
+&lt;header&gt;
+  &lt;nav&gt;
+    &lt;input id="nav-trigger" class="nav-trigger" type="checkbox" checked="checked"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;!--
+   --&gt;&lt;li&gt;&lt;a href="/link"&gt;Other Link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;label for="nav-trigger"&gt;&lt;/label&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+            </pre>
+            <h2>Forms</h2>
+            <p>
+            Here is a simple form:
+            </p>
+            <form method="get" action="#">
+                <fieldset>
+                    <label for="email">Your email:</label>
+                    <input name="email" type="text" id="email" size="25" placeholder="must be unique"/>
+                    <label for="gender">Your gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="none">other</option>
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                    </select>
+                    <input type="radio" id="under" name="age"/>
+                    <label for="under">I'm under 18</label>
+                    <input type="radio" id="over" name="age"/>
+                    <label for="over">I'm over 18</label>
+                    <label for="address">Your full address:</label>
+                    <textarea name="address" id="address" placeholder="PO box is not allowed"></textarea>
+                    <input type="checkbox" name="consent" id="consent" value="test"/>
+                    <label for="consent">I agree with all possible terms and conditions</label>
+                    <button type="submit">Subscribe</button>
+                    <button type="reset">Reset</button>
+                    <button disabled>Can't click</button>
+                </fieldset>
+            </form>
+            <h2>Tables</h2>
+            <p>
+            A simple table would look like this:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Make</th>
+                        <th>Price</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BMW X6</td>
+                        <td>$75,000</td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes-Benz E350</td>
+                        <td>$52,700</td>
+                        <td>2014</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Headings</h2>
+            <p>Just use standard <code>&lt;h1&gt;</code>...<code>&lt;h6&gt;</code> tags:
+            <h1>This is &lt;h1&gt;</h1>
+            <p>Use a heading of the highest level once per page.</p>
+            <h2>This is &lt;h2&gt;</h2>
+            <p>Use <code>&lt;h2&gt;</code> for sections of the page.</p>
+            <h3>This is &lt;h3&gt;</h3>
+            <p>Use <code>&lt;h3&gt;</code> for sub-sections.</p>
+            <h4>This is &lt;h4&gt;</h4>
+            <p>Avoid this type of heading.</p>
+            <h5>This is &lt;h5&gt;</h5>
+            <p>Avoid this type of heading.</p>
+            <h6>This is &lt;h6&gt;</h6>
+            <p>Avoid this type of heading.</p>
+            <h2>Lists</h2>
+            <p>Just use standard <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> and
+            <code>&lt;dl&gt;</code> tags: <ul>
+                <li>Orange</li>
+                <li>
+                    Apple
+                    <ol>
+                        <li>First</li>
+                        <li>
+                            Second
+                            <ul>
+                                <li>Blue</li>
+                                <li>Yellow</li>
+                                <li>Green</li>
+                                <li>Red</li>
+                            </ul>
+                        </li>
+                        <li>Third</li>
+                    </ol>
+                </li>
+                <li>Apricot</li>
+            </ul>
+            <dl>
+                <dt>Banana</dt>
+                <dd>A yellow fruit that is easy to peel.</dd>
+                <dd>Which also grows on a tree.</dd>
+                <dt>Cashew</dt>
+                <dd>A tan nut without a peel.</dd>
+                <dt>Cherry</dt>
+                <dd>A red fruit that is hard to peel.</dd>
+            </dl>
+            <h2>Blockquote</h2>
+            <blockquote>
+                Use this to emphasize a quote
+                <footer>&mdash; Author Name, Publication</footer>
+            </blockquote>
+            <h2>Keyboard</h2>
+            <p>Sometimes you want to let people know they should press a keyboard command
+            like <kbd>ctrl + l</kbd>.</p> <h2>Images</h2>
+            <figure>
+                <img src="https://placehold.it/900x500" />
+                <figcaption>A photo placeholder text</figcaption>
+            </figure>
+            <h2>Work in progress</h2>
+            <p>
+            The framework is still in development.
+            </p>
+        </article>
+        </main>
+        <footer>
+            <p><small>
+                The original framework tacit was made by <a
+                     href="http://www.yegor256.com">Yegor Bugayenko</a>, 2015.
+                 This fork is maintained by WUMSS.
+            </small></p>
+        </footer>
+    </body>
+</html>
