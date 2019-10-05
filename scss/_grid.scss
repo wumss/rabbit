@@ -59,7 +59,8 @@ address {
     margin-bottom: 1.5 * $em;
 }
 
-main, footer {
+main,
+footer {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -83,9 +84,9 @@ footer {
 }
 
 nav {
-    height: $navbar-height;
     background-color: $navbar-background;
     color: $navbar-color;
+    height: $navbar-height;
     text-align: center;
 
     ul {
